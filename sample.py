@@ -19,7 +19,7 @@ def get_prime_factors(inp):
         numbers.append(3)
         inp//=3
 
-    i = 5
+    i = 5 
     while i*i <=inp:     # excluded i^2
         while inp%i == 0: # excluded non divisible
             numbers.append(i)

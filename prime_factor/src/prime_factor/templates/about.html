@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Prime Genius</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      background:
+        linear-gradient(rgba(2, 6, 23, 0.86), rgba(2, 6, 23, 0.9)),
+        url('/public/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    .formula {
+      display: block;
+      text-align: center;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #e0f2fe;
+      margin: 1rem 0;
+    }
+
+    .fraction {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: middle;
+      margin: 0 0.25rem;
+    }
+
+    .fraction .top {
+      padding: 0 0.45rem 0.15rem;
+      border-bottom: 1.8px solid rgba(255,255,255,0.8);
+      line-height: 1.1;
+    }
+
+    .fraction .bottom {
+      padding-top: 0.15rem;
+      line-height: 1.1;
+    }
+
+    .sqrt {
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: flex-start;
+      margin: 0 0.15rem;
+    }
+
+    .sqrt .symbol {
+      font-size: 1.35em;
+      line-height: 1;
+      padding-right: 0.1rem;
+    }
+
+    .sqrt .radicand {
+      border-top: 1.8px solid rgba(255,255,255,0.8);
+      padding: 0.05rem 0.15rem 0 0.35rem;
+      line-height: 1.2;
+    }
+
+    .math-box {
+      background: rgba(14, 165, 233, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-100 font-sans">
+  <nav class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/55 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="/" class="text-2xl font-black uppercase italic tracking-tighter text-sky-400">
+        Prime<span class="text-white">Genius</span>
+      </a>
+      <a
+        href="/"
+        class="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-slate-200 transition hover:bg-white/10 hover:text-white"
+      >
+        ← Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <section class="glass overflow-hidden rounded-[2rem] p-6 sm:p-8 lg:p-12">
+      <div class="mb-8 border-b border-white/10 pb-8">
+        <p class="mb-3 inline-block rounded-full border border-sky-400/25 bg-sky-400/10 px-4 py-1 text-xs font-black uppercase tracking-[0.28em] text-sky-300">
+          # Project 4 of 100 Python Project Series
+        </p>
+        <h1 class="max-w-4xl text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Prime Genius
+        </h1>
+        <p class="mt-4 max-w-3xl text-lg text-slate-300 sm:text-xl">
+          Project Title: <span class="font-bold text-white">Find prime factors of a number</span>
+        </p>
+        <p class="mt-4 max-w-4xl text-base leading-8 text-slate-300 sm:text-lg">
+          A simple project on the surface, but underneath it teaches a very real mathematical idea:
+          every composite number can be broken into its fundamental prime building blocks.
+        </p>
+      </div>
+
+      <section class="grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl border border-white/10 bg-black/20 p-6 lg:col-span-2">
+          <h2 class="mb-4 text-2xl font-bold text-white">Project Links</h2>
+          <div class="space-y-4 text-sm sm:text-base">
+            <div>
+              <p class="mb-1 text-sky-300 font-semibold">Live Preview</p>
+              <a class="break-all text-slate-200 underline decoration-sky-400/50 underline-offset-4 hover:text-sky-300" href="https://primegenious.onrender.com" target="_blank">
+                https://primegenious.onrender.com
+              </a>
+            </div>
+            <div>
+              <p class="mb-1 text-sky-300 font-semibold">GitHub URL</p>
+              <a class="break-all text-slate-200 underline decoration-sky-400/50 underline-offset-4 hover:text-sky-300" href="https://github.com/nishchup489-afk/PRIMEGENIOUS" target="_blank">
+                https://github.com/nishchup489-afk/PRIMEGENIOUS
+              </a>
+            </div>
+            <div>
+              <p class="mb-1 text-sky-300 font-semibold">Navigate to CLI Version</p>
+              <a class="break-all text-slate-200 underline decoration-sky-400/50 underline-offset-4 hover:text-sky-300" href="https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py" target="_blank">
+                https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
+          <h2 class="mb-4 text-2xl font-bold text-white">Stack Used</h2>
+          <ul class="space-y-3 text-sm leading-7 text-slate-300 sm:text-base">
+            <li>• <span class="font-semibold text-white">Pure Python</span> for CLI version</li>
+            <li>• <span class="font-semibold text-white">FastAPI</span> for web version <span class="text-slate-400">(you can use Flask too)</span></li>
+            <li>• <span class="font-semibold text-white">Poetry</span> <span class="text-slate-400">(you can use venv too)</span></li>
+            <li>• <span class="font-semibold text-white">Tailwind CSS v4</span> with browser CDN <span class="text-slate-400">(you can use vanilla CSS too)</span></li>
+            <li>• <span class="font-semibold text-white">Render</span> for deployment</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-8 rounded-3xl border border-white/10 bg-black/20 p-6 sm:p-8">
+        <h2 class="mb-5 text-3xl font-black tracking-tight text-white">Explanation</h2>
+
+        <div class="space-y-8">
+          <div>
+            <h3 class="mb-3 text-2xl font-bold text-sky-300">Pure theory</h3>
+            <div class="space-y-5 text-slate-300 leading-8">
+              <p>
+                <span class="font-bold text-white">Prime numbers</span> → only divisible by 1 and the number itself.
+                Like: <span class="font-semibold text-sky-200">2, 3, 5, 19, 73 ...</span>
+              </p>
+
+              <div>
+                <p class="mb-2"><span class="font-bold text-white">Factors</span> → small numbers you multiply to get the big number.</p>
+                <div class="math-box overflow-x-auto">
+                  <p class="formula">12 = 1 × 12</p>
+                  <p class="formula">12 = 1 × 2 × 6</p>
+                  <p class="formula">12 = 1 × 2 × 2 × 3</p>
+                </div>
+              </div>
+
+              <p>
+                So, <span class="font-bold text-white">prime factors</span> → factors that are prime.
+              </p>
+
+              <p>
+                In case of <span class="font-semibold text-white">12 = 1 × 2 × 6</span>, these are not prime factors because <span class="font-semibold text-red-300">6 is divisible</span>,
+                so we need to divide it further by a smaller prime like 2.
+              </p>
+
+              <div class="math-box overflow-x-auto">
+                <p class="formula">12 = 1 × 2 × 2 × 3</p>
+              </div>
+
+              <p>Now those are the prime factors.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-2xl font-bold text-sky-300">Note</h3>
+            <div class="space-y-3 text-slate-300 leading-8">
+              <p>• <span class="font-semibold text-white">1 is not a prime number</span></p>
+              <p>• <span class="font-semibold text-white">Smallest prime number is 2</span>, so we start by counting from 2</p>
+              <p>• Even numbers are never prime numbers <span class="text-slate-400">(except 2 itself)</span></p>
+
+              <div class="math-box overflow-x-auto">
+                <p class="formula">If c = a × b</p>
+                <p class="formula">
+                  then
+                  <span class="sqrt"><span class="symbol">√</span><span class="radicand">c</span></span>
+                  ≥ a
+                  &nbsp;and/or&nbsp;
+                  <span class="sqrt"><span class="symbol">√</span><span class="radicand">c</span></span>
+                  ≥ b
+                </p>
+              </div>
+
+              <p>
+                That means once you pass the square root limit, you do not need to keep checking bigger factors.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-2xl font-bold text-sky-300">How to get prime factors in math</h3>
+            <p class="mb-4 text-slate-300 leading-8">Suppose the number is <span class="font-bold text-white">n = 60</span>.</p>
+
+            <div class="space-y-6">
+              <div class="rounded-2xl border border-sky-400/20 bg-sky-500/5 p-5">
+                <h4 class="mb-3 text-xl font-bold text-white">Step 1</h4>
+                <p class="mb-3 text-slate-300 leading-8">
+                  Keep dividing by the smallest prime <span class="font-bold text-sky-300">2</span> until no more divisible.
+                  If divisible, 2 is in the list of prime factors.
+                </p>
+                <div class="math-box overflow-x-auto">
+                  <p class="formula"><span class="fraction"><span class="top">60</span><span class="bottom">2</span></span> = 30 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2 ]</p>
+                  <p class="formula"><span class="fraction"><span class="top">30</span><span class="bottom">2</span></span> = 15 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2, 2 ]</p>
+                  <p class="formula"><span class="fraction"><span class="top">15</span><span class="bottom">2</span></span> = ❌</p>
+                </div>
+              </div>
+
+              <div class="rounded-2xl border border-sky-400/20 bg-sky-500/5 p-5">
+                <h4 class="mb-3 text-xl font-bold text-white">Step 2</h4>
+                <p class="mb-3 text-slate-300 leading-8">
+                  Move to the next smaller prime number <span class="font-bold text-sky-300">3</span> and keep dividing until you can.
+                </p>
+                <div class="math-box overflow-x-auto">
+                  <p class="formula"><span class="fraction"><span class="top">15</span><span class="bottom">3</span></span> = 5 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2, 2, 3 ]</p>
+                </div>
+              </div>
+
+              <div class="rounded-2xl border border-sky-400/20 bg-sky-500/5 p-5">
+                <h4 class="mb-3 text-xl font-bold text-white">Step 3</h4>
+                <p class="mb-3 text-slate-300 leading-8">Check the square root limit of your number <span class="text-slate-400">(optional in small cases or in math)</span>.</p>
+                <div class="math-box overflow-x-auto">
+                  <p class="formula"><span class="sqrt"><span class="symbol">√</span><span class="radicand">60</span></span> = 7.7459 ≈ 7</p>
+                </div>
+                <p class="mt-3 text-slate-300">So we only have to check factors up to 7.</p>
+              </div>
+
+              <div class="rounded-2xl border border-sky-400/20 bg-sky-500/5 p-5">
+                <h4 class="mb-3 text-xl font-bold text-white">Step 4</h4>
+                <p class="mb-3 text-slate-300 leading-8">Keep dividing until no more divisible by any valid number.</p>
+                <p class="mb-2 text-slate-300">Next prime: <span class="font-bold text-sky-300">5</span></p>
+                <div class="math-box overflow-x-auto">
+                  <p class="formula"><span class="fraction"><span class="top">5</span><span class="bottom">5</span></span> = 1</p>
+                </div>
+                <p class="mt-3 text-slate-300">
+                  Now 1 is no more divisible, so prime factors are
+                  <span class="font-bold text-white">[ 2, 2, 3, 5 ]</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-2xl font-bold text-sky-300">Case 2: 84</h3>
+            <div class="space-y-5 text-slate-300 leading-8">
+              <p>First smallest prime: <span class="font-bold text-sky-300">2</span></p>
+              <div class="math-box overflow-x-auto">
+                <p class="formula"><span class="sqrt"><span class="symbol">√</span><span class="radicand">84</span></span> = 9.17 ≈ 9</p>
+              </div>
+
+              <div class="math-box overflow-x-auto">
+                <p class="formula"><span class="fraction"><span class="top">84</span><span class="bottom">2</span></span> = 42 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2 ]</p>
+                <p class="formula"><span class="fraction"><span class="top">42</span><span class="bottom">2</span></span> = 21 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2, 2 ]</p>
+                <p class="formula"><span class="fraction"><span class="top">21</span><span class="bottom">2</span></span> = ❌</p>
+              </div>
+
+              <div class="math-box overflow-x-auto">
+                <p class="formula"><span class="fraction"><span class="top">21</span><span class="bottom">3</span></span> = 7 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2, 2, 3 ]</p>
+                <p class="formula"><span class="fraction"><span class="top">7</span><span class="bottom">3</span></span> = ❌</p>
+              </div>
+
+              <div class="math-box overflow-x-auto">
+                <p class="formula"><span class="fraction"><span class="top">7</span><span class="bottom">5</span></span> = ❌</p>
+              </div>
+
+              <div class="math-box overflow-x-auto">
+                <p class="formula"><span class="fraction"><span class="top">7</span><span class="bottom">7</span></span> = 1 &nbsp;&nbsp;→&nbsp;&nbsp; [ 2, 2, 3, 7 ]</p>
+              </div>
+
+              <p>We get 1, so no more divisible. <span class="font-bold text-white">PF = [ 2, 2, 3, 7 ]</span></p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-2xl font-bold text-sky-300">In code</h3>
+            <p class="mb-4 text-slate-300 leading-8">Remember: we exclude unnecessary cases to make the logic cleaner and faster.</p>
+
+            <div class="grid gap-6 lg:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-slate-950/50 p-5">
+                <h4 class="mb-3 text-lg font-bold text-white">To exclude</h4>
+                <ol class="space-y-3 text-slate-300 leading-8">
+                  <li>1. Take input and create a number list</li>
+                  <li>2. Exclude all numbers divisible by 2 and append 2</li>
+                  <li>3. Exclude all numbers divisible by 3 and append 3 <span class="text-slate-400">(optional but good)</span></li>
+                  <li>4. Start iteration from next prime <span class="font-mono text-sky-200">i = 5</span></li>
+                  <li>5. Exclude all numbers greater than square root of input</li>
+                  <li>6. Exclude all iterations which are not divisible by input</li>
+                  <li>7. Exclude even numbers using <span class="font-mono text-sky-200">i += 2</span></li>
+                  <li>8. Finally if the number itself remains, append it</li>
+                </ol>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-slate-950/50 p-5">
+                <h4 class="mb-3 text-lg font-bold text-white">Core snippets</h4>
+                <div class="space-y-4">
+                  <pre class="overflow-x-auto rounded-xl border border-white/10 bg-black/50 p-4 text-sm text-sky-200"><code>while i * i &lt;= inp:</code></pre>
+                  <pre class="overflow-x-auto rounded-xl border border-white/10 bg-black/50 p-4 text-sm text-sky-200"><code>while inp % i == 0:</code></pre>
+                  <pre class="overflow-x-auto rounded-xl border border-white/10 bg-black/50 p-4 text-sm text-sky-200"><code>i += 2</code></pre>
+                  <pre class="overflow-x-auto rounded-xl border border-white/10 bg-black/50 p-4 text-sm text-sky-200"><code>if inp &gt; 1:
+    numbers.append(inp)</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-sky-400/20 bg-sky-500/5 p-6">
+            <h3 class="mb-4 text-2xl font-bold text-white">Resources</h3>
+            <div class="space-y-4 text-slate-300 leading-8">
+              <p>
+                Navigate to CLI version:
+                <a class="break-all text-sky-300 underline decoration-sky-400/50 underline-offset-4 hover:text-white" href="https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py" target="_blank">
+                  https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py
+                </a>
+              </p>
+              <p>
+                Check out other projects of the 100 Python Project Series:
+                <a class="break-all text-sky-300 underline decoration-sky-400/50 underline-offset-4 hover:text-white" href="https://github.com/nishchup489-afk/100-Python-Projects" target="_blank">
+                  https://github.com/nishchup489-afk/100-Python-Projects
+                </a>
+              </p>
+              <p>Best of luck. If you get any problem, check the repo and logic again.</p>
+              <p>
+                Or email me:
+                <a class="text-sky-300 underline decoration-sky-400/50 underline-offset-4 hover:text-white" href="mailto:nishchup489@gmail.com">
+                  nishchup489@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
