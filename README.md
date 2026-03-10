@@ -2,7 +2,7 @@
 
 ## A Structured Journey: From Fundamentals → Systems → Capstones
 
-This repository documents a mission to build **100 practical Python projects using FastAPI**.
+This repository documents a mission to build **100 practical Python projects using FastAPI or CLI**.
 
 But this is **not** a random list of coding exercises.
 
