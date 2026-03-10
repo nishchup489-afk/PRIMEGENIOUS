@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Factorizer | Project 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            /* Using the requested background image */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('public/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans text-slate-100">
+
+    <nav class="p-6 flex justify-between items-center">
+        <h1 class="text-2xl font-black tracking-tighter uppercase italic text-sky-400">
+            Prime<span class="text-white">Genius</span>
+        </h1>
+        <a href="about.html" class="px-5 py-2 glass rounded-full hover:bg-white/20 transition-all duration-300 text-sm font-medium">
+            About Project
+        </a>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="glass max-w-md w-full p-8 rounded-3xl shadow-2xl">
+            <header class="mb-8 text-center">
+                <h2 class="text-3xl font-bold mb-2">Prime Factorizer</h2>
+                <p class="text-slate-400 text-sm">Enter a composite number to break it down to its fundamental primes.</p>
+            </header>
+
+            <form action="/calc" method="post" class="space-y-4">
+                <div class="relative">
+                    <input type="number" name="user_input" id="user_input" required
+                        class="w-full bg-black/30 border border-slate-700 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all placeholder:text-slate-500"
+                        placeholder="e.g. 1234">
+                </div>
+                
+                <button type="submit" 
+                    class="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-sky-900/20 transform active:scale-95 transition-all cursor-pointer">
+                    Factorize Now →
+                </button>
+            </form>
+
+            {% if result %}
+                <div class="mt-8 p-6 bg-sky-500/10 border border-sky-500/30 rounded-2xl animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <span class="block text-xs font-bold uppercase tracking-widest text-sky-400 mb-2">Prime Factors</span>
+                    <div class="text-2xl font-mono font-semibold break-words">
+                        {{result}}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </main>
+
+    <footer class="p-8 text-center text-slate-500 text-sm">
+        <div class="mb-2">
+            <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded text-[10px] font-bold uppercase tracking-tighter">
+                #Project 4 of 100
+            </span>
+        </div>
+        <p>Check out our <strong>100 Python Projects</strong> series</p>
+        <a href="https://github.com/nishchup489-afk/100-Python-Projects" target="_blank" class="text-sky-400 hover:underline">
+            github.com/nishchup489-afk
+        </a>
+    </footer>
+
+</body>
+</html>

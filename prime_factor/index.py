@@ -1,0 +1,1 @@
+from src.prime_factor.main import app
