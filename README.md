@@ -1,439 +1,300 @@
-# 🚀 100 FastAPI Projects
+# Prime Genius
 
-## A Structured Journey: From Fundamentals → Systems → Capstones
-
-This repository documents a mission to build **100 practical Python projects using FastAPI or CLI**.
-
-But this is **not** a random list of coding exercises.
-
-The projects are intentionally structured into three layers:
-
-* **60 Small / Medium Projects** → build core programming skills
-* **13 Mega Projects** → one large system per category
-* **3 Capstone Projects** → large multi-domain applications
-
-This structure transforms the repository from a collection of exercises into a **progressive engineering curriculum**.
-
----
-# IMPORTANT 🚨: if you just want to practice python no fastapi or web integration, just see the sample.py of every project. also check the sample_fancy.py for in terminal good ui with color.
----
-
-# 📊 Project Architecture
-
-| Layer                   | Count   | Purpose                               |
-| ----------------------- | ------- | ------------------------------------- |
-| Small / Medium Projects | 60      | Core algorithmic and backend practice |
-| Mega Projects           | 13      | Category-level system design          |
-| Capstone Projects       | 3       | Large real-world applications         |
-| **Total**               | **100** | Full development journey              |
+**Project Title:** Find Prime Factors of a Number
+**Series:** #Project 4 of 100 Python Projects
 
 ---
 
-# 🧰 Technology Stack
+## Live Preview
 
-### Backend
-
-* Python 3.10+
-* FastAPI
-
-### Frontend
-
-* Jinja2 Templates
-* TailwindCSS
-
-### Environment
-
-* Poetry (primary)
-* venv (optional)
-
-### Deployment
-
-* Vercel
+* Live App: [https://primegenious.onrender.com](https://primegenious.onrender.com)
+* GitHub Repository: [https://github.com/nishchup489-afk/PRIMEGENIOUS](https://github.com/nishchup489-afk/PRIMEGENIOUS)
+* CLI Version: [https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py](https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py)
 
 ---
 
-# 🏗 Standard Project Structure
+## Stack Used
 
-Every project follows a consistent architecture.
+### CLI Version
 
-```
-project-name/
+* Pure Python
 
-app/
-    main.py
-    routers/
-    services/
-    schemas/
+### Web Version
 
-templates/
-    index.html
-
-static/
-    styles.css
-
-sample.py
-pyproject.toml
-README.md
-```
-
-Each project contains:
-
-* **Pure Python CLI implementation** (`sample.py`)
-* **FastAPI web interface**
-* **Jinja2 frontend**
-* **Tailwind UI**
+* FastAPI *(Flask can also be used)*
+* Poetry *(you can also use venv)*
+* TailwindCSS v4 (via browser CDN) *(vanilla CSS can also work)*
+* Render for deployment
 
 ---
 
-# ▶ Running Any Project
+## Other Projects in the "100 Python Projects" Series
+
+[https://github.com/nishchup489-afk/100-Python-Projects](https://github.com/nishchup489-afk/100-Python-Projects)
+
+---
+
+# Explanation
+
+## Pure Theory
+
+### Prime Numbers
+
+Prime numbers are numbers that are **only divisible by 1 and the number itself**.
+
+Examples:
 
 ```
-git clone https://github.com/nishchup489-afk/100-Python-Projects
-
-cd project-folder
-
-poetry install
-
-poetry run uvicorn app.main:app --reload
-```
-
-Open:
-
-```
-http://127.0.0.1:8000
+2, 3, 5, 19, 73 ...
 ```
 
 ---
 
-# 📚 Category Structure
+### Factors
 
-The repository is divided into **13 technical categories**.
+Factors are **smaller numbers you multiply to get the original number**.
 
-Each category contains:
+Example:
 
-* multiple small projects
-* **1 mega project** that combines concepts
-
----
-
-# 🔢 Numbers
-
-## Small / Medium
-
-* Find PI to the Nth Digit
-* Find e to the Nth Digit
-* Fibonacci Sequence
-* Prime Factorization
-* Next Prime Number
-* Tile Cost Calculator
-* Mortgage Calculator
-* Change Return Program
-* Binary ↔ Decimal Converter
-* Scientific Calculator
-* Unit Converter
-* Alarm Clock
-* Distance Between Cities
-* Credit Card Validator
-* Tax Calculator
-* Factorial Finder
-* Complex Number Algebra
-* Happy Numbers
-* Number Names
-* Limit Calculator
-* Fast Exponentiation
-
-### ⭐ Mega Project
-
-**Math & Finance Toolkit**
-
-A complete mathematical utility suite combining:
-
-* calculators
-* loan / mortgage tools
-* tax estimators
-* unit converters
-* number theory tools
+```
+12 = 1 × 12
+12 = 1 × 2 × 6
+12 = 1 × 2 × 2 × 3
+```
 
 ---
 
-# ⚙ Classic Algorithms
+### Prime Factors
 
-## Small / Medium
+Prime factors are **factors that are prime numbers**.
 
-* Sorting Algorithms
-* Closest Pair Problem
-* Sieve of Eratosthenes
+Example:
 
-### ⭐ Mega Project
+```
+12 = 1 × 2 × 6
+```
 
-**Algorithm Visualizer Lab**
+This is **not prime factorization**, because **6 is not prime**.
 
-Interactive visualizations for:
+So we divide 6 further:
 
-* sorting
-* sieve generation
-* algorithm complexity
+```
+12 = 1 × 2 × 2 × 3
+```
 
----
+Now every factor except 1 is prime.
 
-# 🔗 Graph Theory
+So the **prime factors are:**
 
-## Small / Medium
-
-* Eulerian Path
-* Connected Graph Checker
-* Dijkstra Shortest Path
-* Minimum Spanning Tree
-
-### ⭐ Mega Project
-
-**Graph Explorer Studio**
-
-Interactive graph builder and algorithm playground.
+```
+2, 2, 3
+```
 
 ---
 
-# 📚 Data Structures
+# Important Notes
 
-## Small / Medium
+* `1` is **not a prime number**
+* The **smallest prime number is 2**, so we always start from 2
+* Even numbers (except 2) are **never prime numbers**
 
-* Inverted Index
+Mathematical observation:
 
-### ⭐ Mega Project
+If
 
-**Search Engine Core**
+$$
+c = a \times b
+$$
 
-A mini document search engine implementing:
+Then at least one of the numbers must satisfy
 
-* indexing
-* ranking
-* keyword search
+$$
+\sqrt{c} \ge a \quad \text{or} \quad \sqrt{c} \ge b
+$$
 
----
-
-# ✍ Text Processing
-
-## Small / Medium
-
-* Reverse String
-* Pig Latin Generator
-* Vowel Counter
-* Palindrome Checker
-* Word Counter
-* Text Editor
-* RSS Feed Creator
-* Guestbook / Journal
-* Cipher Tools
-* Regex Query Tool
-
-### ⭐ Mega Project
-
-**NLP Text Utility Suite**
-
-A multi-tool platform for analyzing and transforming text.
+This means we **only need to test factors up to the square root of the number**.
 
 ---
 
-# 🌐 Networking
+# How to Get Prime Factors (Math Process)
 
-## Small / Medium
+Suppose the number
 
-* Bandwidth Monitor
-* Port Scanner
-* Mail Checker
-* IP → Country Lookup
-* Whois Lookup
-* Site Status Checker
-
-### ⭐ Mega Project
-
-**Network Diagnostic Dashboard**
-
-A monitoring dashboard combining multiple network utilities.
+```
+n = 60
+```
 
 ---
 
-# 🧱 Object-Oriented Systems
+## Step 1
 
-## Small / Medium
+Keep dividing by the **smallest prime (2)** until it is no longer divisible.
 
-* Product Inventory
-* Reservation System
-* Company Manager
-* Bank Account Manager
-* Patient Scheduler
-* Recipe Manager
-* Image Gallery
-* Shape Geometry Classes
-* Family Tree Builder
-
-### ⭐ Mega Project
-
-**Business Management Suite**
-
-A unified system managing inventory, employees, and scheduling.
+```
+60 / 2 = 30    → [2]
+30 / 2 = 15    → [2, 2]
+15 / 2 = ❌
+```
 
 ---
 
-# ⚡ Concurrency
+## Step 2
 
-## Small / Medium
+Move to the **next prime (3)**.
 
-* Download Progress Tracker
-* Bulk Thumbnail Generator
-
-### ⭐ Mega Project
-
-**Async Media Processing Studio**
-
-Concurrent processing of media files with background tasks.
+```
+15 / 3 = 5     → [2, 2, 3]
+```
 
 ---
 
-# 🌍 Web Applications
+## Step 3 (Optional in small cases)
 
-## Small / Medium
+Check the square root limit.
 
-* Page Scraper
-* Online Whiteboard
-* Weather Fetcher
-* Auto Login Scheduler
-* E‑Card Generator
-* Mini CMS
-* Forum System
-* CAPTCHA Generator
+```
+√60 = 7.7459 ≈ 7
+```
 
-### ⭐ Mega Project
-
-**Web Utility Platform**
-
-A unified web toolkit combining scraping, automation and APIs.
+So all factors must be **≤ 7**.
 
 ---
 
-# 📁 File Systems
+## Step 4
 
-## Small / Medium
+Continue dividing.
 
-* Quiz Maker
-* CSV / Excel Sorter
-* Zip File Creator
-* PDF Generator
-* Code Snippet Manager
+```
+5 / 5 = 1
+```
 
-### ⭐ Mega Project
+Now the number becomes **1**, meaning the process stops.
 
-**File Operations Workbench**
+Final prime factors:
 
-Advanced file processing and document generation toolkit.
-
----
-
-# 🗄 Databases
-
-## Small / Medium
-
-* SQL Query Analyzer
-* Remote SQL Tool
-* Report Generator
-* Event Scheduler
-* Budget Tracker
-* Travel Planner
-
-### ⭐ Mega Project
-
-**Data Management Console**
-
-Full data dashboard for querying, reporting and analytics.
+```
+[2, 2, 3, 5]
+```
 
 ---
 
-# 🎨 Graphics & Multimedia
+# Example 2
 
-## Small / Medium
+```
+84
+```
 
-* Slide Show Generator
-* MP3 Player
-* Watermarking Tool
-* Turtle Graphics
-* GIF Creator
+Limit:
 
-### ⭐ Mega Project
-
-**Media Studio**
-
-Image, animation and media manipulation platform.
+```
+√84 = 9.17 ≈ 9
+```
 
 ---
 
-# 🔐 Security
+### Step 1
 
-## Small / Medium
-
-* Encryption Utilities
-
-### ⭐ Mega Project
-
-**Security Toolkit**
-
-Includes:
-
-* cipher tools
-* password strength analyzer
-* encoding utilities
+```
+84 / 2 = 42   → [2]
+42 / 2 = 21   → [2, 2]
+21 / 2 = ❌
+```
 
 ---
 
-# 🏆 Capstone Projects
+### Step 2
 
-These are **large multi-domain systems** built after completing most projects.
-
-## 98 — DevTool Forge
-
-A complete developer toolbox including:
-
-* JSON formatter
-* Markdown → HTML converter
-* regex tester
-* API latency tester
-* URL metadata preview
+```
+21 / 3 = 7   → [2, 2, 3]
+7 / 3 = ❌
+```
 
 ---
 
-## 99 — Data Utility Hub
+### Step 3
 
-A full platform for working with data:
-
-* CSV tools
-* report generation
-* database analytics
+```
+7 / 5 = ❌
+```
 
 ---
 
-## 100 — Smart Productivity OS
+### Step 4
 
-A personal productivity platform including:
+```
+7 / 7 = 1   → [2, 2, 3, 7]
+```
 
-* scheduling
-* notes
-* reminders
-* dashboards
+Prime factors:
 
----
-
-# 🎯 Final Goal
-
-By finishing this repository, the result will be:
-
-* 100 deployable FastAPI applications
-* strong backend engineering experience
-* system design practice
-* portfolio‑ready projects
-
-This repository represents a **complete progression from beginner tools to complex software systems.**
+```
+[2, 2, 3, 7]
+```
 
 ---
 
-# 📜 License
+# Implementation Logic (In Code)
 
-MIT License
+### Remember
+
+To reduce unnecessary computation we **exclude many cases**.
+
+Steps:
+
+1. Take input and create a number list
+2. Remove all numbers divisible by `2` and append `2`
+3. Remove all numbers divisible by `3` and append `3` *(optional but efficient)*
+4. Start iteration from next prime `i = 5`
+5. Stop checking numbers larger than the square root
+
+```
+while i*i <= inp
+```
+
+6. Only divide when divisible
+
+```
+while inp % i == 0
+```
+
+7. Skip even numbers
+
+```
+i += 2
+```
+
+8. Finally if the remainder itself is prime
+
+```python
+if inp > 1:
+    numbers.append(inp)
+```
+
+---
+
+## CLI Version
+
+Full CLI implementation:
+
+[https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py](https://github.com/nishchup489-afk/PRIMEGENIOUS/blob/main/sample.py)
+
+---
+
+## Need Help?
+
+If you get stuck:
+
+* Check the repository issues
+* Revisit the logic explained above
+
+Or contact:
+
+**Email:** [nishchup489@gmail.com](mailto:nishchup489@gmail.com)
+
+---
+
+## Part of
+
+**100 Python Projects Challenge** 🚀
+
+Learning by building, one project at a time.
