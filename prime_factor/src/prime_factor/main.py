@@ -55,7 +55,7 @@ def calc(request: Request , user_input: int = Form()):
     )
 
 
-@app.get("/" , response_class=HTMLResponse)
+@app.get("/about" , response_class=HTMLResponse)
 def About(request : Request):
     return templates.TemplateResponse(
         "about.html" , 
